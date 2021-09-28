@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="counter">
+        <p>
+            Contador: {{ contador }}
+        </p>
+        <span v-bind:title="titulo">
+            Passe o mouse sobre mim.
+        </span>
+    </div>
+
+    <div id="app3">
+        <p v-if="seen">Você me vê?</p>
+        <button v-on:click="changeSeenState">Teste</button>
+    </div>
+
+    <div id="app4">
+        <todo-item></todo-item>
+        <todo-item></todo-item>
+    </div>
+    <script src="vue.js"></script>
+</body>
+</html>
